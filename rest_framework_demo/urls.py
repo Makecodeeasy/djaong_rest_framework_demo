@@ -18,11 +18,13 @@ from django.urls import path
 from django.conf.urls import url
 
 from Auth_demo.views import CreateUserView, LoginView, OrderView
+from Permission_demo.views import UserView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('api/v1/users/', CreateUserView.as_view()),
+    # url('api/v1/users/', CreateUserView.as_view()),
+    url('api/v1/users/', UserView.as_view()),
     url('api/v1/login/', LoginView.as_view()),
     url('api/v1/order/', OrderView.as_view()),
 ]
