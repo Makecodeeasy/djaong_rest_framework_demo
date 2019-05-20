@@ -1,0 +1,8 @@
+权限控制app
+简单的实现了用户增删改查的权限控制
+
+user_type = 1 只允许查看用户列表
+user_type = 2 允许查看和新增用户
+user_type = 3 允许增删改查所有权限
+
+增删改查分别使用 POST， DELETE， PUT， GET 方法
